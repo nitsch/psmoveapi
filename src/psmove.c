@@ -709,6 +709,7 @@ _psmove_get_firmware_info(PSMove *move)
         p = buf + 1;
     }
 
+    printf("Feature Read result = %d\n", res);
     psmove_return_val_if_fail(res == expected_res, NULL);
 
     PSMove_Firmware_Info *info = malloc(sizeof(PSMove_Firmware_Info));
