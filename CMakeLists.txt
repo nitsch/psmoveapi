@@ -154,7 +154,7 @@ if (PSMOVE_USE_LOCAL_OPENCV)
             ${AVFOUNDATION})
     elseif(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
         list(APPEND PSMOVEAPI_TRACKER_REQUIRED_LIBS
-            opencv_highgui249 opencv_imgproc249 opencv_core249
+            opencv_highgui244 opencv_imgproc244 opencv_core244
             libjpeg libpng zlib stdc++
             vfw32 comctl32)
     else()
