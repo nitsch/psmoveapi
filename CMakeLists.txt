@@ -230,12 +230,6 @@ ELSEIF(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
     set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -static -static-libgcc -static-libstdc++")
     set(CMAKE_STATIC_LIBRARY_FLAGS "${CMAKE_STATIC_LIBRARY_FLAGS} -static -static-libgcc -static-libstdc++")
 
-    if (NOT CMAKE_TOOLCHAIN_FILE)
-        # Only include these if we are NOT cross-compiling on Linux
-        include_directories(${CMAKE_CURRENT_SOURCE_DIR}/external/mingw-w64-headers)
-        link_directories(${CMAKE_CURRENT_SOURCE_DIR}/external/mingw-w64-headers)
-    endif()
-
     IF(PSMOVE_USE_CL_EYE_SDK)
         find_path(CL_EYE_SDK_PATH Bin/CLEyeMulticam.dll
             HINTS "C:/Program Files/Code Laboratories/CL-Eye Platform SDK"
