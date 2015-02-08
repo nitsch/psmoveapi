@@ -92,8 +92,14 @@ IMPORTANT: Get the right MinGW version!
 	MinGW builds, we build our own. First, get version 2.4.4 from
 	the OpenCV repository.
 
-	git clone --depth 1 git://github.com/Itseez/opencv.git
+	git clone --branch 2.4.4 --depth 1 git://github.com/Itseez/opencv.git
 	cd opencv
+
+	NOTE: If you are using an older version of git that does not support
+	      specifying tags in the --branch option (typically by warning "Remote
+	      branch 2.4.4 not found in upstream origin, using HEAD instead"), do
+	      the following after changing to the opencv directory:
+
 	git checkout 2.4.4
 
 4. Configure the OpenCV build to produce static libs
