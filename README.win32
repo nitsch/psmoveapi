@@ -125,7 +125,7 @@ IMPORTANT: Get the right MinGW version!
 	cd build
 	cmake .. -G "MinGW Makefiles" -DPSMOVE_USE_LOCAL_OPENCV=1
 
-    Alternatively, if you want to use the CL Eye SDK:
+	Alternatively, if you want to use the CL Eye SDK:
 
 	cmake .. -G "MinGW Makefiles" -DPSMOVE_USE_LOCAL_OPENCV=1 -DPSMOVE_USE_CL_EYE_SDK=1
 
@@ -135,34 +135,34 @@ IMPORTANT: Get the right MinGW version!
 
 8. Pair the controller to the host
 
-    Using the controllers' Bluetooth capabilities requires you to pair the
-    controller to the host computer first. That is what the psmovepair utility
-    is for. It is automatically built as part of the PS Move API.
+	Using the controllers' Bluetooth capabilities requires you to pair the
+	controller to the host computer first. That is what the psmovepair utility
+	is for. It is automatically built as part of the PS Move API.
 
-    Make sure that Bluetooth is enabled on your computer, then connect a Move
-    controller via USB and run
+	Make sure that Bluetooth is enabled on your computer, then connect a Move
+	controller via USB and run
 
-    psmovepair.exe
+	psmovepair.exe
 
-    to store the host's Bluetooth device address in the Move and register the
-    controller. Follow the instructions on the screen until the Move's red
-    status LED eventually remains lit to indicate a working Bluetooth
-    connection.
+	to store the host's Bluetooth device address in the Move and register the
+	controller. Follow the instructions on the screen until the Move's red
+	status LED eventually remains lit to indicate a working Bluetooth
+	connection.
 
-    Note that the pairing step is necessary only once per controller. From that
-    point on you can enable the Bluetooth connection simply by pressing the
-    PS button. Only if you switched to a different Bluetooth adapter or deleted
-    the controller from the list of Bluetooth devices you need to run
-    psmovepair again for that controller.
+	Note that the pairing step is necessary only once per controller. From that
+	point on you can enable the Bluetooth connection simply by pressing the
+	PS button. Only if you switched to a different Bluetooth adapter or deleted
+	the controller from the list of Bluetooth devices you need to run
+	psmovepair again for that controller.
 
 9. Start one of the desired test applications
 
-    If you previously chose to build the example applications (which is the
-    default), you can then run
+	If you previously chose to build the example applications (which is the
+	default), you can then run
 
-    example.exe
+	example.exe
 
-    for a basic example.
+	for a basic example.
 
 
 
